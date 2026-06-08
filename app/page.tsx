@@ -14,16 +14,18 @@ const IntroductionPage = async () => {
   return (
     <>
       <PageHeader>
-        <PageHeaderHeading>Aditya Domle</PageHeaderHeading>
+        <PageHeaderHeading>Pavan Sista</PageHeaderHeading>
         <PageHeaderHeading className="mt-2 text-muted-foreground">
-          A coder by day, problem-solver by night!
+          Curious by heart Full-Stack Web Developer & Platform Engineer 
         </PageHeaderHeading>
         <PageHeaderDescription>
-          I am a dedicated Software Engineer specializing in full-stack
-          application development. I enjoy crafting responsive web solutions
-          using modern technologies like Next.js, React, Tailwind CSS, Node.js,
-          Express, and MongoDB, while also applying DevOps practices, continuously
-          aiming to deliver high-quality, comprehensive, user-centric software solutions.
+          I design and develop custom solutions for multiple departments across my organization, 
+          including Health & Safety, Enterprise Risk Management, Enterprise Response Planning, 
+          Procurement, Business Innovation, Fleet & Services, Supply Chain Management etc. 
+          With 5 years of experience in the public electrical utility sector, 
+          I am a collaborative full-stack developer and platform architect 
+          with a strong background in .NET Core, Blazor, Power Platform, Azure services, 
+          and process automation, supported by hands-on experience and a master’s degree in computer science.
         </PageHeaderDescription>
         <PageActions>
           <Button asChild size="sm" className="rounded-md">

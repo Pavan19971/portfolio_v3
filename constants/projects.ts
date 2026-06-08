@@ -1,24 +1,25 @@
 export const projects = [
   {
-    title: "Nike Reimagined | Modern Redesign Concept",
-    slug: "nike-reimagined",
+    title: "DER Registry | .NET CORE Web API and Blazor WebApp",
+    slug: "distributed-energy-resource-registry",
     tagline:
-      "A sleek and modern redesign of Nike’s official web experience built with React and Tailwind CSS.",
+      "A Large scale DER registry web application built with .NET Core Web API and Blazor, designed to manage and track distributed energy resources across the province.",
     overview:
-      "Nike Reimagined is a creative redesign project focused on delivering a refined, high-performance web experience inspired by Nike’s global brand identity. It highlights a clean, minimal UI with smooth transitions, responsive layouts, and optimized performance across devices. The project demonstrates a balance of aesthetics and functionality for a real-world eCommerce feel.",
+      "Built on Robert Cecil Martin's Clean Architecture principles, this project features a layered architecture with clear separation of concerns. With Each of the layers as a seperate project in the solution, it ensures massive scalability and maintainability.",
     features: [
-      "Minimalist and modern user interface design",
-      "Fully responsive layouts optimized for all devices",
-      "Smooth page transitions and animations with Framer Motion",
-      "Optimized build process with Vite for fast loading",
-      "Deployed on Vercel for production-grade performance",
+      "CORE - The parent c# library holding multiple db contexts and respecticve models",
+      "API - The controller web API prpject. Leverarting the CORE library, it exposes RESTful endpoints for managing DER data.",
+      "Repostotyr- The data access layer, implementing the repository pattern to abstract database interactions and ensure a clean separation of concerns.",
+      "Application Logic - Untie Business logic the UI Layer, ensuring a clean and maintainable Business Logic",
+      "WebApp - A Blazor server built using Premium Telerik UI components, providing a rich and interactive user interface for managing DER data and visualizing insights.",
     ],
     techStack: [
-      "React.js",
-      "Tailwind CSS",
-      "Vite",
-      "Framer Motion",
-      "Vercel",
+      "@Blazor",
+      "@Telerik UI",
+      ".NET Core",
+      "C#",
+      "Entity Framework Core",
+      "Clean Architecture",
     ],
     challenges: [
       "Maintaining brand consistency while reimagining Nike’s design language.",
