@@ -1,7 +1,23 @@
+export const projectZones = [
+  {
+    title: "Full Stack and DevOps",
+    slug: "full-stack-devops",
+    description:
+      "Explore .NET, backend, and DevOps-focused projects with end-to-end delivery.",
+  },
+  {
+    title: "Microsoft Power Platform",
+    slug: "microsoft-power-platform",
+    description:
+      "Explore business apps, workflows, and analytics solutions built with the Power Platform.",
+  },
+] as const;
+
 export const projects = [
   {
     title: "DER Registry | .NET CORE Web API and Blazor WebApp",
     slug: "distributed-energy-resource-registry",
+    category: "full-stack-devops",
     tagline:
       "A Large scale DER registry web application built with .NET Core Web API and Blazor, designed to manage and track distributed energy resources across the province.",
     overview:
@@ -36,76 +52,75 @@ export const projects = [
     feedback: false,
     links: {
       live: "https://nike-reimagined-mu.vercel.app/",
-      github: "https://github.com/adityadomle/nike-reimagined",
+      github: "https://github.com/Pavan19971/nike-reimagined",
     },
   },
 
   {
-    title: "Portfolio | Aditya Domle",
-    slug: "portfolio",
+    title: "Risk Register - Enterprise Risk Management PowerApp",
+    slug: "risk-register",
+    category: "microsoft-power-platform",
     tagline:
-      "A dynamic portfolio showcasing my projects, skills, and contributions using the latest web technologies.",
+      "An enterprise risk management application built using Microsoft Power Platform, designed to help organizations identify, assess, and mitigate risks effectively.",
     overview:
-      "My personal portfolio is built to highlight my journey as a developer. It integrates advanced features like profile views tracking, a love count mechanism, and server-side actions for seamless interactivity and performance.",
+      "Risk Register is a comprehensive enterprise risk management application that helps organizations identify, assess, and mitigate risks. Built on the Microsoft Power Platform, it leverages Power Apps, Power Automate, and Power BI to provide a seamless and integrated solution for managing enterprise risks.",
     features: [
-      "API to track and display profile views in real-time.",
-      "Love count feature to allow visitors to express appreciation for the work.",
-      "Implemented server actions using the latest Next.js features.",
-      "Dynamic project listing with slug-based routing for detailed pages.",
-      "Mobile-responsive and optimized for all devices.",
-      "Integration with MongoDB using Mongoose for efficient data management.",
+      "Risk Identification and Assessment: Allows users to identify and assess risks across various departments and projects.",
+      "Risk Mitigation Planning: Provides tools to develop and implement risk mitigation strategies.",
+      "Real-time Risk Monitoring: Enables continuous monitoring of risk factors and their impact on the organization.",
+      "Integration with Microsoft Power Platform: Leverages Power Apps, Power Automate, and Power BI for a comprehensive risk management solution.",
+      "Customizable Dashboards: Offers interactive dashboards for visualizing risk data and insights.",
+      "Automated Reporting: Generates automated reports for stakeholders and management.",
+
     ],
     techStack: [
-      "Next.js",
-      "SadCn/UI",
-      "MongoDB",
-      "Tailwind CSS",
-      "Radix UI",
-      "TypeScript",
+      "Power Automates",
+      "Power Apps",
+      "SharePoint",
+      "Power BI",
+
     ],
     challenges: [
-      "Implementing real-time tracking for profile views efficiently.",
-      "Designing and integrating a scalable database schema with Mongoose.",
-      "Utilizing server actions for seamless and performant interactions.",
+      "Working around the Delegation limits of Power Apps to ensure smooth performance.",
+      "Designing and integrating version history and change tracking within the app.",
       "Ensuring cross-browser and device compatibility for UI components.",
     ],
     learnings: [
-      "Deepened knowledge of Next.js server actions and their use cases.",
-      "Gained experience in designing interactive UI components.",
-      "Enhanced understanding of MongoDB operations and ORM with Mongoose.",
-      "Improved ability to optimize performance for web applications.",
+      "Seperate List for version hsitoyr? No, I figured out how to do it with a single list and some clever use of Power Automate. This tracks sharepoint edits as well directly by rthe suers",
+      "Effective use of CoE Starter Kit for governance and monitoring of Power Platform applications.",
+
     ],
     feedback: true,
     links: {
-      live: "https://aadi.is-a.dev",
-      github: "https://topmate.io/aditya_domle/1773422",
+      live: "https://portfolio-v3-idf9.onrender.com",
+      github: "https://topmate.io/pavan_sista/1773422",
     },
   },
   {
-    title: "News Hub | Real-Time News Platform",
-    slug: "news-hub",
+    title: "Performance Management Application | Human Resouces",
+    slug: "performance-management",
+    category: "full-stack-devops",
     tagline:
-      "A real-time news platform delivering the latest headlines across various categories using the News API.",
+      "A performance management application for human resources, designed to streamline employee evaluations and feedback processes.",
     overview:
-      "News Hub is a responsive and dynamic web application designed to provide users with up-to-date news from India and around the world. Built with React and TypeScript, the platform integrates the News API to fetch real-time stories, organized into categories like technology, business, sports, and entertainment. The clean UI ensures a smooth reading experience, while the optimized frontend guarantees fast performance.",
+      "The Performance Management Application is a comprehensive tool for human resources departments to manage employee performance evaluations, track progress, and provide feedback. Built with React and TypeScript, the platform ensures a seamless user experience and efficient performance management workflows.",
     features: [
-      "Real-time news updates fetched from the News API.",
-      "Categorized news sections for better content navigation.",
-      "Responsive design for an optimal viewing experience on all devices.",
-      "Built with Vite for fast development and performance optimization.",
-      "Clean and accessible UI components powered by shadcn/ui and Tailwind CSS.",
+      "Real-time performance tracking and evaluation.",
+      "Categorized performance metrics for better insights.",
+      "Automated feedback collection and reporting.",
+      "Integration with existing HR systems for data synchronization.",
+      "Customizable evaluation templates and workflows.",
     ],
     techStack: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Vite",
-      "shadcn-ui",
+      "C#",
+      ".NET Core",
+      "Entity Framework",
+
     ],
     challenges: [
-      "Integrating and managing dynamic data from the News API.",
-      "Designing a clean UI to handle real-time content updates efficiently.",
-      "Optimizing performance and build times using Vite.",
+      "Integrating and managing dynamic data from the HR systems.",
+      "Designing a clean UI to handle real-time performance updates efficiently.",
+      "Optimizing performance and build times using .NET Core.",
       "Ensuring responsiveness and accessibility across devices.",
     ],
     learnings: [
@@ -117,83 +132,46 @@ export const projects = [
     feedback: true,
     links: {
       live: "https://news-hub-seven-chi.vercel.app/",
-      github: "https://github.com/adityadomle/news-hub",
+      github: "https://github.com/Pavan19971/news-hub",
     },
   },
   {
-    title: "Freshmart Store | Modern Grocery Web App",
-    slug: "freshmart-store",
+    title: "EA BDD Approval Flows",
+    slug: "ea-bdd-approval-flows",
+    category: "microsoft-power-platform",
     tagline:
-      "A clean, modern, and responsive grocery store web app built with React, Vite, Redux, and Tailwind CSS.",
+      "A comprehensive power automate solution for managing BDD approval flows within the Enterprise Architecture team, designed to streamline and automate the approval process for architectural decisions.",
     overview:
-      "Freshmart Store is a modern grocery shopping platform designed to offer users a seamless and visually appealing experience. Built using React and Vite, it focuses on performance and smooth navigation. Redux ensures efficient state management for cart operations and product handling, while Tailwind CSS provides a clean and responsive interface optimized for all devices.",
+      "The EA BDD Approval Flows project is a robust solution built to manage and automate the approval processes within the Enterprise Architecture team. Leveraging Power Automate, it ensures efficient handling of BDD approvals, reducing manual effort and improving workflow consistency.",
     features: [
-      "Modern and responsive UI optimized for all screen sizes.",
-      "Smooth routing and navigation for an app-like experience.",
-      "State management using Redux for efficient cart and product updates.",
-      "Fast development and performance optimization powered by Vite.",
+      "Automated BDD approval workflows for the Enterprise Architecture team.",
+      "Real-time notifications and updates on approval status.",
+      "Integration with existing enterprise systems for seamless data flow.",
+      "Customizable approval templates and rules to fit organizational needs.",
       "Clean design and user-friendly layout for better usability.",
     ],
     techStack: [
-      "React",
-      "Vite",
-      "Redux",
-      "Tailwind CSS",
+      "Power Automate",
+      "Dataverse",
+      "Sharepoint",
+      
     ],
     challenges: [
-      "Implementing scalable state management with Redux.",
+      "Implementing scalable state management with Power Automate.",
       "Ensuring responsive and consistent UI across devices.",
-      "Optimizing performance and build speed using Vite.",
+      "Optimizing performance and build speed using Power Automate.",
       "Designing a smooth and intuitive navigation flow.",
     ],
     learnings: [
-      "Enhanced understanding of Redux for managing global state efficiently.",
-      "Improved skills in responsive UI design using Tailwind CSS.",
-      "Learned performance tuning techniques with Vite.",
+      "Enhanced understanding of Power Automate for managing global state efficiently.",
+      "Improved skills in responsive UI design using Power Automate.",
+      "Learned performance tuning techniques with Power Automate.",
       "Gained experience in creating scalable and maintainable frontend structures.",
     ],
     feedback: true,
     links: {
       live: "https://freshmart-store.vercel.app",
-      github: "https://github.com/adityadomle/freshmart-store",
+      github: "https://github.com/Pavan19971/freshmart-store",
     },
-  },
-  {
-    title: "GitHub Profile Viewer | Instant GitHub Insights",
-    slug: "github-profile-viewer",
-    tagline:
-      "An interactive web app to instantly view GitHub profiles with clean UI built using HTML, CSS, and JavaScript.",
-    overview:
-      "GitHub Profile Viewer allows users to instantly fetch and view detailed GitHub profiles using the GitHub REST API. The app displays essential user information including profile picture, name, bio, followers, repositories, and more. With a responsive and minimalist interface, it offers a smooth experience for exploring any GitHub account directly from the browser.",
-    features: [
-      "Instantly search and view any GitHub user's profile.",
-      "Displays profile picture, username, bio, followers, and repositories.",
-      "Responsive and clean user interface for better readability.",
-      "Utilizes GitHub REST API for fetching real-time profile data.",
-      "Lightweight structure ensuring fast performance and accessibility.",
-    ],
-    techStack: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "GitHub API",
-    ],
-    challenges: [
-      "Fetching and managing API data efficiently with JavaScript.",
-      "Designing a clean, minimal, and responsive interface.",
-      "Handling errors for invalid or non-existent GitHub users.",
-      "Ensuring smooth and fast data rendering without frameworks.",
-    ],
-    learnings: [
-      "Strengthened understanding of API integration using JavaScript.",
-      "Improved skills in building responsive layouts with pure CSS.",
-      "Learned effective DOM manipulation and async handling.",
-      "Enhanced ability to design lightweight, framework-free web apps.",
-    ],
-    feedback: true,
-    links: {
-      live: "https://adityadomle.github.io/GitHub-Profile-Viewer/",
-      github: "https://github.com/adityadomle/GitHub-Profile-Viewer",
-    },
-  },
+  }
 ];

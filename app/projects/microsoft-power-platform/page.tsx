@@ -1,40 +1,43 @@
 import { PageHeader, PageHeaderHeading } from '@/components/page-header';
-import Pager from '@/components/pager';
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { projectZones } from '@/constants/projects';
+import { projects } from '@/constants/projects';
 import Link from 'next/link';
 
-const ProjectsPage = () => {
+const powerPlatformProjects = projects.filter(
+  (project) => project.category === 'microsoft-power-platform'
+);
+
+const MicrosoftPowerPlatformProjectsPage = () => {
   return (
     <>
       <PageHeader className="mb-10">
-        <PageHeaderHeading>Projects</PageHeaderHeading>
+        <PageHeaderHeading>Microsoft Power Platform</PageHeaderHeading>
         <PageHeaderHeading className="mt-2 text-muted-foreground">
-          Choose a category to view projects by specialization.
+          Power Platform specific projects.
         </PageHeaderHeading>
       </PageHeader>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 card-container">
-        {projectZones.map((zone, index) => (
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 card-container">
+        {powerPlatformProjects.map((project, index) => (
           <Card
-            title={zone.description}
+            title={project.overview}
             key={index}
             className="relative w-full transition-all duration-300 cursor-pointer isolate hover:scale-105"
           >
             <CardHeader>
-              <CardTitle className="leading-6">{zone.title}</CardTitle>
+              <CardTitle className="leading-6">{project.title}</CardTitle>
               <CardDescription className="flex flex-col gap-2">
-                {zone.description}
+                {project.tagline}
                 <Link
-                  href={`/projects/${zone.slug}`}
+                  href={`/projects/${project.slug}`}
                   className="text-muted-foreground "
                 >
-                  View Projects...
+                  Learn More...
                   <span className="absolute inset-0"></span>
                 </Link>
               </CardDescription>
@@ -42,14 +45,8 @@ const ProjectsPage = () => {
           </Card>
         ))}
       </div>
-
-      <Pager
-        prevHref="/"
-        nextHref="/skills-tools"
-        prevTitle="Introduction"
-        nextTitle="Skills & Tools"
-      />
     </>
   );
 };
-export default ProjectsPage;
+
+export default MicrosoftPowerPlatformProjectsPage;
