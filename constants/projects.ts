@@ -80,9 +80,14 @@ export const projects: Project[] = [
     },
     screenshots: [
       {
-        src: "/projects/project-screenshot-placeholder.svg",
-        alt: "DER Registry application screenshot",
-        caption: "Replace this placeholder with your DER Registry screenshot.",
+        src: "/projects/der_registry_1.png",
+        alt: "DER Registry screenshot 1",
+        caption: "DER Registry 1",
+      },
+      {
+        src: "/projects/der_registry_2.png",
+        alt: "DER Registry screenshot 2",
+        caption: "DER Registry 2",
       },
     ],
   },

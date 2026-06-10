@@ -20,9 +20,9 @@ export async function SiteFooter() {
             <span className="hidden sm:inline"> · </span>
             <span className="block sm:inline">
               Coded in{" "}
-              <span className="font-medium text-foreground">Cursor</span> and
+              <span className="font-medium text-foreground">VS Code</span> and
               deployed with{" "}
-              <span className="font-medium text-foreground">Vercel</span>
+              <span className="font-medium text-foreground">Render</span>
             </span>
           </div>
           <div className="text-xs text-center sm:text-sm text-muted-foreground">
@@ -35,15 +35,7 @@ export async function SiteFooter() {
             >
               Pavan Sista
             </Link>{" "}
-            · Source code available on{" "}
-            <Link
-              href="https://topmate.io/pavan_sista/1773422"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium transition-colors text-primary hover:text-primary/80"
-            >
-              Topmate
-            </Link>
+            
           </div>
         </div>
       </div>
