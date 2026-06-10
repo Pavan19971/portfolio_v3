@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { siteConfig } from '@/config/site';
 import { ArrowLeftIcon, ExternalLinkIcon } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const getProject = async (slug: string) => {
   return projects.find((project) => project.slug === slug);
@@ -71,6 +72,33 @@ const ProjectDetails = async ({
           ))}
         </div>
       </div>
+
+      {project.screenshots && project.screenshots.length > 0 && (
+        <section id="screenshots" className="my-6">
+          <h2 className="text-lg font-semibold mb-3">Screenshots</h2>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            {project.screenshots.map((screenshot) => (
+              <figure
+                key={`${project.slug}-${screenshot.src}`}
+                className="overflow-hidden border rounded-lg border-border bg-muted/20"
+              >
+                <Image
+                  src={screenshot.src}
+                  alt={screenshot.alt}
+                  width={1600}
+                  height={900}
+                  className="object-cover w-full h-auto"
+                />
+                {screenshot.caption && (
+                  <figcaption className="p-3 text-sm text-muted-foreground">
+                    {screenshot.caption}
+                  </figcaption>
+                )}
+              </figure>
+            ))}
+          </div>
+        </section>
+      )}
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 font-light">
         <div id="features" className="my-4">

@@ -1,3 +1,27 @@
+type ProjectScreenshot = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
+
+type Project = {
+  title: string;
+  slug: string;
+  category: string;
+  tagline: string;
+  overview: string;
+  features: string[];
+  techStack: string[];
+  challenges: string[];
+  learnings: string[];
+  feedback: boolean;
+  links: {
+    live?: string;
+    github?: string;
+  };
+  screenshots?: ProjectScreenshot[];
+};
+
 export const projectZones = [
   {
     title: "Full Stack and DevOps",
@@ -13,7 +37,7 @@ export const projectZones = [
   },
 ] as const;
 
-export const projects = [
+export const projects: Project[] = [
   {
     title: "DER Registry | .NET CORE Web API and Blazor WebApp",
     slug: "distributed-energy-resource-registry",
@@ -54,6 +78,13 @@ export const projects = [
       live: "https://nike-reimagined-mu.vercel.app/",
       github: "https://github.com/Pavan19971/nike-reimagined",
     },
+    screenshots: [
+      {
+        src: "/projects/project-screenshot-placeholder.svg",
+        alt: "DER Registry application screenshot",
+        caption: "Replace this placeholder with your DER Registry screenshot.",
+      },
+    ],
   },
 
   {
@@ -95,6 +126,23 @@ export const projects = [
       live: "https://portfolio-v3-idf9.onrender.com",
       github: "https://topmate.io/pavan_sista/1773422",
     },
+    screenshots: [
+      {
+        src: "/projects/risk_register_screenshot_1.png",
+        alt: "Risk Register screenshot 1",
+        caption: "Risk Register 1",
+      },
+      {
+        src: "/projects/risk_register_screenshot_2.png",
+        alt: "Risk Register screenshot 2",
+        caption: "Risk Register 2",
+      },
+      {
+        src: "/projects/risk_register_screenshot_3.png",
+        alt: "Risk Register screenshot 3",
+        caption: "Risk Register 3",
+      },
+    ],
   },
   {
     title: "Performance Management Application | Human Resouces",
@@ -134,6 +182,14 @@ export const projects = [
       live: "https://news-hub-seven-chi.vercel.app/",
       github: "https://github.com/Pavan19971/news-hub",
     },
+    screenshots: [
+      {
+        src: "/projects/project-screenshot-placeholder.svg",
+        alt: "Performance Management application screenshot",
+        caption:
+          "Replace this placeholder with your Performance Management screenshot.",
+      },
+    ],
   },
   {
     title: "EA BDD Approval Flows",
@@ -173,5 +229,13 @@ export const projects = [
       live: "https://freshmart-store.vercel.app",
       github: "https://github.com/Pavan19971/freshmart-store",
     },
+    screenshots: [
+      {
+        src: "/projects/project-screenshot-placeholder.svg",
+        alt: "EA BDD Approval Flows screenshot",
+        caption:
+          "Replace this placeholder with your EA BDD Approval Flows screenshot.",
+      },
+    ],
   }
 ];
