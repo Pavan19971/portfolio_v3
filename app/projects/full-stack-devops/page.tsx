@@ -5,6 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { ArrowLeftIcon } from 'lucide-react';
 import { projects } from '@/constants/projects';
 import Link from 'next/link';
 
@@ -15,6 +16,14 @@ const fullStackDevOpsProjects = projects.filter(
 const FullStackDevOpsProjectsPage = () => {
   return (
     <>
+      <Link
+        href="/projects"
+        className="flex items-center gap-2 mb-4 text-muted-foreground cursor-pointer w-fit"
+      >
+        <ArrowLeftIcon className="w-4 h-4" />
+        Back to categories
+      </Link>
+
       <PageHeader className="mb-10">
         <PageHeaderHeading>Full Stack and DevOps</PageHeaderHeading>
         <PageHeaderHeading className="mt-2 text-muted-foreground">

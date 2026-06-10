@@ -38,6 +38,7 @@ export const projectZones = [
 ] as const;
 
 export const projects: Project[] = [
+  // full-stack-devops
   {
     title: "DER Registry | .NET CORE Web API and Blazor WebApp",
     slug: "distributed-energy-resource-registry",
@@ -92,6 +93,103 @@ export const projects: Project[] = [
     ],
   },
 
+  {
+    title: "Performance Management Application | Human Resouces",
+    slug: "performance-management",
+    category: "full-stack-devops",
+    tagline:
+      "A performance management application for human resources, designed to streamline employee evaluations and feedback processes.",
+    overview:
+      "The Performance Management Application is a comprehensive tool for human resources departments to manage employee performance evaluations, track progress, and provide feedback. Built with React and TypeScript, the platform ensures a seamless user experience and efficient performance management workflows.",
+    features: [
+      "Real-time performance tracking and evaluation.",
+      "Categorized performance metrics for better insights.",
+      "Automated feedback collection and reporting.",
+      "Integration with existing HR systems for data synchronization.",
+      "Customizable evaluation templates and workflows.",
+    ],
+    techStack: [
+      "C#",
+      ".NET Core",
+      "Entity Framework",
+
+    ],
+    challenges: [
+      "Integrating and managing dynamic data from the HR systems.",
+      "Designing a clean UI to handle real-time performance updates efficiently.",
+      "Optimizing performance and build times using .NET Core.",
+      "Ensuring responsiveness and accessibility across devices.",
+    ],
+    learnings: [
+      "Improved understanding of working with external APIs in React applications.",
+      "Enhanced experience in using TypeScript for type-safe development.",
+      "Learned to optimize frontend builds using Vite and modular UI design.",
+      "Developed better state management practices for dynamic data handling.",
+    ],
+    feedback: true,
+    links: {
+      live: "https://news-hub-seven-chi.vercel.app/",
+      github: "https://github.com/Pavan19971/news-hub",
+    },
+    screenshots: [
+      {
+        src: "/projects/project-screenshot-placeholder.svg",
+        alt: "Performance Management application screenshot",
+        caption:
+          "Replace this placeholder with your Performance Management screenshot.",
+      },
+    ],
+  },
+
+  // microsoft-power-platform
+   {
+    title: "Center of Excellence (CoE) Starter Kit - Power Platform Governance",
+    slug: "coe-starter-kit-power-platform-governance",
+    category: "microsoft-power-platform",
+    tagline:
+      "The Center of Excellence (CoE) Starter Kit for Power Platform Governance.",
+    overview:
+      "The Center of Excellence (CoE) Starter Kit for Power Platform Governance is a comprehensive solution designed to help organizations establish and maintain governance practices for their Power Platform environments. Built on the Microsoft Power Platform, it ensures best practices are followed and operational risks are minimized.",
+    features: [
+      "Admin View to manage governance settings and monitor compliance.",
+      "ALM Accelerator: Facilitates application lifecycle management for Power Platform solutions using Azure Devops CI/CD.",
+    ],
+    techStack: [
+      "Power Automate",
+      "Power Apps",
+      "Dataverse",
+      "SharePoint",
+      "Power Fx"
+      
+    ],
+    challenges: [
+      "Strong coupling with Power Automate Flows.",
+      "State management across multiple screens and components in Power Apps.",
+   
+    ],
+    learnings: [
+      
+    ],
+    feedback: true,
+    links: {
+      live: "https://freshmart-store.vercel.app",
+      github: "https://github.com/Pavan19971/freshmart-store",
+    },
+    screenshots: [
+      {
+        src: "/projects/coe_alm_1.png",
+        alt: "coe_alm_1",
+        caption:
+          "Replace this placeholder with your CoE Starter Kit screenshot.",
+      },
+        {
+        src: "/projects/coe_alm_2.png",
+        alt: "coe_alm_2",
+        caption:
+          "Replace this placeholder with your CoE Starter Kit screenshot.",
+      },
+    ],
+  },
   {
     title: "Risk Register - Enterprise Risk Management PowerApp",
     slug: "risk-register",
@@ -150,52 +248,99 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Performance Management Application | Human Resouces",
-    slug: "performance-management",
-    category: "full-stack-devops",
+    title: "Opportunity Hub PowerApp - Business Innovation Team",
+    slug: "opportunity-hub-powerapp",
+    category: "microsoft-power-platform",
     tagline:
-      "A performance management application for human resources, designed to streamline employee evaluations and feedback processes.",
+      "Digitized improvement suggestions, streamlined workflows, fostering collaboration and accelerating organizational innovation.",
     overview:
-      "The Performance Management Application is a comprehensive tool for human resources departments to manage employee performance evaluations, track progress, and provide feedback. Built with React and TypeScript, the platform ensures a seamless user experience and efficient performance management workflows.",
+      "The Opportunity Hub PowerApp is a comprehensive solution designed to digitize improvement suggestions and streamline workflows for the Business Innovation Team. Built on the Microsoft Power Platform, it fosters collaboration and accelerates organizational innovation by providing a centralized platform for idea submission, evaluation, and implementation.",
     features: [
-      "Real-time performance tracking and evaluation.",
-      "Categorized performance metrics for better insights.",
-      "Automated feedback collection and reporting.",
-      "Integration with existing HR systems for data synchronization.",
-      "Customizable evaluation templates and workflows.",
-    ],
-    techStack: [
-      "C#",
-      ".NET Core",
-      "Entity Framework",
+      "Centralized Idea Submission: Provides a user-friendly interface for employees to submit improvement suggestions and ideas.",
+      "Streamlined Workflow Management: Automates the routing and approval of ideas to ensure timely evaluation and implementation. ",
+      "Collaboration and Feedback: Enables team members to collaborate on ideas, provide feedback, and track the progress of suggestions.",
 
     ],
+    techStack: [
+      "Power Automate",
+      "Power Apps",
+      "Dataverse",
+      "SharePoint",
+      "Power Fx"
+      
+    ],
     challenges: [
-      "Integrating and managing dynamic data from the HR systems.",
-      "Designing a clean UI to handle real-time performance updates efficiently.",
-      "Optimizing performance and build times using .NET Core.",
-      "Ensuring responsiveness and accessibility across devices.",
+      "Delegation limits in Power Apps when handling large datasets.",
+      "State management across multiple screens and components in Power Apps.",
+   
     ],
     learnings: [
-      "Improved understanding of working with external APIs in React applications.",
-      "Enhanced experience in using TypeScript for type-safe development.",
-      "Learned to optimize frontend builds using Vite and modular UI design.",
-      "Developed better state management practices for dynamic data handling.",
+      
     ],
     feedback: true,
     links: {
-      live: "https://news-hub-seven-chi.vercel.app/",
-      github: "https://github.com/Pavan19971/news-hub",
+      live: "https://freshmart-store.vercel.app",
+      github: "https://github.com/Pavan19971/freshmart-store",
     },
     screenshots: [
       {
-        src: "/projects/project-screenshot-placeholder.svg",
-        alt: "Performance Management application screenshot",
+        src: "/projects/opp_hub_1.png",
+        alt: "Opportunity Hub 1",
         caption:
-          "Replace this placeholder with your Performance Management screenshot.",
+          "Replace this placeholder with your Opportunity Hub screenshot.",
       },
+       {
+        src: "/projects/opp_hub_2.png",
+        alt: "Opportunity Hub 2 ",
+        caption:
+          "Replace this placeholder with your Opportunity Hub screenshot.",
+      }
     ],
   },
+   {
+    title: "Hygiene Initiative Tracker PowerApp - IT Security Team",
+    slug: "hygiene-initiative-tracker-powerapp",
+    category: "microsoft-power-platform",
+    tagline:
+      "Automates reminders and compliance tracking for shared devices, reducing operational risk and ensuring hygiene standards.",
+    overview:
+      "The Hygiene Initiative Tracker PowerApp is a comprehensive solution designed to automate reminders and track compliance for shared devices within the IT Security Team. Built on the Microsoft Power Platform, it ensures hygiene standards are maintained and operational risks are minimized.",
+    features: [
+      "Automated Reminders: Sends timely reminders to ensure compliance with hygiene standards.",
+      "Compliance Tracking: Monitors and records the hygiene status of shared devices.",
+      "Centralized Dashboard: Provides a comprehensive view of compliance metrics and trends.",
+    ],
+    techStack: [
+      "Power Automate",
+      "Power Apps",
+      "Dataverse",
+      "SharePoint",
+      "Power Fx"
+      
+    ],
+    challenges: [
+      "Strong coupling with Power Automate Flows.",
+      "State management across multiple screens and components in Power Apps.",
+   
+    ],
+    learnings: [
+      
+    ],
+    feedback: true,
+    links: {
+      live: "https://freshmart-store.vercel.app",
+      github: "https://github.com/Pavan19971/freshmart-store",
+    },
+    screenshots: [
+      {
+        src: "/projects/hyg_init_1.png",
+        alt: "Hygiene Initiative Tracker 1",
+        caption:
+          "Replace this placeholder with your Hygiene Initiative Tracker screenshot.",
+      }
+    ],
+  },
+
   {
     title: "EA BDD Approval Flows",
     slug: "ea-bdd-approval-flows",

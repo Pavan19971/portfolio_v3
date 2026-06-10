@@ -1,4 +1,4 @@
-import { projects } from '@/constants/projects';
+import { projectZones, projects } from '@/constants/projects';
 import {
   PageHeader,
   PageHeaderDescription,
@@ -13,6 +13,10 @@ import { ProjectScreenshotsSlider } from '@/components/project-screenshots-slide
 
 const getProject = async (slug: string) => {
   return projects.find((project) => project.slug === slug);
+};
+
+const getProjectCategory = (categorySlug: string) => {
+  return projectZones.find((zone) => zone.slug === categorySlug);
 };
 
 const ProjectDetails = async ({
@@ -40,15 +44,21 @@ const ProjectDetails = async ({
     );
   }
 
+  const projectCategory = getProjectCategory(project.category);
+  const backHref = projectCategory ? `/projects/${project.category}` : '/projects';
+  const backLabel = projectCategory
+    ? `Back to ${projectCategory.title}`
+    : 'Back to projects';
+
   return (
     <div>
       <div className="navigation">
         <Link
-          href="/projects"
+          href={backHref}
           className="flex items-center gap-2 mb-4 text-muted-foreground cursor-pointer w-fit"
         >
           <ArrowLeftIcon className="w-4 h-4" />
-          Back to projects
+          {backLabel}
         </Link>
       </div>
 
