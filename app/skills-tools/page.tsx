@@ -14,13 +14,10 @@ const SkillsToolsPage = () => {
       <PageHeader>
         <PageHeaderHeading>Skills & Tools</PageHeaderHeading>
         <PageHeaderHeading className="mt-2 text-muted-foreground">
-          Learned by coding all night and debugging all day!
+          Built with .NET, Power Platform, and cloud infrastructure.
         </PageHeaderHeading>
         <PageHeaderDescription>
-          As a full-stack Software Engineer, I specialize in building scalable
-          web applications using modern technologies such as Next.js, React, and
-          Tailwind CSS. I'm also expanding my expertise into DevOps and cloud
-          practices to create efficient, maintainable, robust web solutions.
+          As a Full Stack & DevOps Engineer, I specialize in designing and building scalable enterprise applications using C#, .NET Core, and Microsoft Azure. I'm an expert in the Microsoft Power Platform ecosystem—Power Apps, Power Automate, and Power Fx—enabling rapid low-code/no-code solutions. My expertise spans cloud architecture, CI/CD pipelines, database management, and DevSecOps practices that deliver secure, maintainable, and performant solutions across both traditional development and modern automation platforms.
         </PageHeaderDescription>
       </PageHeader>
 

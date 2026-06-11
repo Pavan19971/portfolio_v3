@@ -15,8 +15,8 @@ export const experiences: TimelineViewerData[] = [
       'Provided technical support for BMO through ServiceNow ITSM, resolving service desk incidents and assisting users with technical issues while pursuing academic studies.',
   },
   {
-    title: 'Junior Software Engineer · Sheriyans Coding School',
-    date: 'May 2025 – Oct. 2025',
+    title: 'Junior Software Engineer · Abhibus Pvt Ltd, Hyderabad, India',
+    date: 'Oct 2018– July 2019',
     description:
       'Modernized a legacy application by migrating it from Java Struts to a React, Node.js, and MongoDB architecture. Designed and implemented complex business logic for vehicle seating and allocation workflows.',
   },
