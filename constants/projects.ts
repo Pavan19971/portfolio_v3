@@ -1,4 +1,4 @@
-﻿type ProjectScreenshot = {
+type ProjectScreenshot = {
   src: string;
   alt: string;
   caption?: string;
@@ -40,21 +40,19 @@ export const projects: Project[] = [
     tagline:
       "A comprehensive Azure DevOps setup for CI/CD, including pipelines, repositories, and artifact management.",
     overview:
-      "Built on Branch and Release workflows by Microsoft, it contains Yaml pipelies for automated build and release processes.",
+      "Built on Branch and Release workflows by Microsoft, it contains reusable Yaml pipelies, safety checks for automated build and release processes.",
     features: [
-      "Continoious INtegraton - Build validation on every PR to ensure code quality and catch issues early.",
-      "Contimnious Deployment - Automated Deployment of source code and evnrionemtn setup on completion of a PR.",
-      "Repostotyr- The data access layer, implementing the repository pattern to abstract database interactions and ensure a clean separation of concerns.",
-      "Application Logic - Untie Business logic the UI Layer, ensuring a clean and maintainable Business Logic",
-      "WebApp - A Blazor server built using Premium Telerik UI components, providing a rich and interactive user interface for managing DER data and visualizing insights.",
+      "Continuous Integration - Build validation on every PR to ensure code quality and catch issues early.",
+      "Continuous Deployment - Automated Deployment of source code and environment setup on completion of a PR.",
+      "Environment Specific safety gates - Implemented environment specific checks and approvals to ensure safe deployments.",
+      "Artifact Management - Leveraged Azure Artifacts for efficient package management and version control.",
     ],
     techStack: [
-      "@Blazor",
-      "@Telerik UI",
+      "Azure DevOps",
+      "Yaml Pipelines",
       ".NET Core",
-      "C#",
-      "Entity Framework Core",
-      "Clean Architecture",
+      "Kubernetes",
+      "On-Prem Agents"
     ],
     feedback: false,
     screenshots: [
@@ -322,4 +320,3 @@ export const projects: Project[] = [
     ],
   }
 ];
-
