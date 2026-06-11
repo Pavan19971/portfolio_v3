@@ -18,7 +18,7 @@ const EducationPage = () => {
         </PageHeaderHeading>
         <PageHeaderDescription>
           Education has always been the cornerstone of my journey into the tech
-          world. I completed my Master's in Computer Science at Birla Global University
+          world. I completed my Master's in Computer Science at Bishop's University
           and my Bachelor's in Computer Science at Jawaharlal Nehru Technological University (JNTU),
           Hyderabad, India, building a strong foundation in computer science and software development.
         </PageHeaderDescription>

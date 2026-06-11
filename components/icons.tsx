@@ -194,11 +194,6 @@ export const Icons = {
       />
     </svg>
   ),
-  vercel: (props: IconProps) => (
-    <svg role="img" viewBox="0 0 24 24" {...props}>
-      <path d="m12 1.608 12 20.784H0Z" fill="currentColor" />
-    </svg>
-  ),
   docker: (props: IconProps) => (
     <svg role="img" viewBox="0 0 24 24" {...props}>
       <title>Docker</title>

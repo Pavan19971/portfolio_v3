@@ -6,4 +6,4 @@ No fluff. Just code, design, and smooth motion.
 
 🧠 Stack
 
-Next.js • React • TypeScript • Tailwind • Framer Motion • Vercel
+Next.js • React • TypeScript • Tailwind • Framer Motion
