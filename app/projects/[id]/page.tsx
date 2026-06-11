@@ -102,28 +102,6 @@ const ProjectDetails = async ({
           </ul>
         </div>
 
-        <div id="challenges" className="my-4">
-          <h2 className="text-lg font-semibold">Challenges</h2>
-          <ul className="list-disc list-outside">
-            {project.challenges?.map((challenge) => (
-              <li className="ml-4 pl-2" key={challenge}>
-                {challenge}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div id="learnings" className="my-4">
-          <h2 className="text-lg font-semibold">Learnings</h2>
-          <ul className="list-disc list-outside ">
-            {project.learnings?.map((learning) => (
-              <li className="ml-4 pl-2" key={learning}>
-                {learning}
-              </li>
-            ))}
-          </ul>
-        </div>
-
         {project.feedback && (
           <div id="feedback" className="my-4">
             <h2 className="text-lg font-semibold">Feedback</h2>

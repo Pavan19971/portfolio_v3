@@ -1,4 +1,4 @@
-type ProjectScreenshot = {
+﻿type ProjectScreenshot = {
   src: string;
   alt: string;
   caption?: string;
@@ -12,8 +12,6 @@ type Project = {
   overview: string;
   features: string[];
   techStack: string[];
-  challenges: string[];
-  learnings: string[];
   feedback: boolean;
   screenshots?: ProjectScreenshot[];
 };
@@ -58,18 +56,6 @@ export const projects: Project[] = [
       "Entity Framework Core",
       "Clean Architecture",
     ],
-    challenges: [
-      "Maintaining brand consistency while reimagining Nike’s design language.",
-      "Achieving smooth animations without affecting performance.",
-      "Ensuring pixel-perfect responsiveness across devices.",
-      "Optimizing load times for a better user experience.",
-    ],
-    learnings: [
-      "Mastered efficient UI composition with React and Tailwind CSS.",
-      "Improved understanding of animation principles using Framer Motion.",
-      "Enhanced deployment workflow using Vercel and Vite integration.",
-      "Developed better practices for responsive and scalable frontend design.",
-    ],
     feedback: false,
     screenshots: [
       {
@@ -102,18 +88,6 @@ export const projects: Project[] = [
       "C#",
       "Entity Framework Core",
       "Clean Architecture",
-    ],
-    challenges: [
-      "Maintaining brand consistency while reimagining Nike’s design language.",
-      "Achieving smooth animations without affecting performance.",
-      "Ensuring pixel-perfect responsiveness across devices.",
-      "Optimizing load times for a better user experience.",
-    ],
-    learnings: [
-      "Mastered efficient UI composition with React and Tailwind CSS.",
-      "Improved understanding of animation principles using Framer Motion.",
-      "Enhanced deployment workflow using Vercel and Vite integration.",
-      "Developed better practices for responsive and scalable frontend design.",
     ],
     feedback: false,
     screenshots: [
@@ -151,18 +125,6 @@ export const projects: Project[] = [
       "Entity Framework",
 
     ],
-    challenges: [
-      "Integrating and managing dynamic data from the HR systems.",
-      "Designing a clean UI to handle real-time performance updates efficiently.",
-      "Optimizing performance and build times using .NET Core.",
-      "Ensuring responsiveness and accessibility across devices.",
-    ],
-    learnings: [
-      "Improved understanding of working with external APIs in React applications.",
-      "Enhanced experience in using TypeScript for type-safe development.",
-      "Learned to optimize frontend builds using Vite and modular UI design.",
-      "Developed better state management practices for dynamic data handling.",
-    ],
     feedback: true,
     screenshots: [
       {
@@ -197,14 +159,6 @@ export const projects: Project[] = [
       "Dataverse",
       "SharePoint",
       "Power Fx"
-      
-    ],
-    challenges: [
-      "Strong coupling with Power Automate Flows.",
-      "State management across multiple screens and components in Power Apps.",
-   
-    ],
-    learnings: [
       
     ],
     feedback: true,
@@ -245,16 +199,6 @@ export const projects: Project[] = [
       "Power Apps",
       "SharePoint",
       "Power BI",
-
-    ],
-    challenges: [
-      "Working around the Delegation limits of Power Apps to ensure smooth performance.",
-      "Designing and integrating version history and change tracking within the app.",
-      "Ensuring cross-browser and device compatibility for UI components.",
-    ],
-    learnings: [
-      "Seperate List for version hsitoyr? No, I figured out how to do it with a single list and some clever use of Power Automate. This tracks sharepoint edits as well directly by rthe suers",
-      "Effective use of CoE Starter Kit for governance and monitoring of Power Platform applications.",
 
     ],
     feedback: true,
@@ -298,14 +242,6 @@ export const projects: Project[] = [
       "Power Fx"
       
     ],
-    challenges: [
-      "Delegation limits in Power Apps when handling large datasets.",
-      "State management across multiple screens and components in Power Apps.",
-   
-    ],
-    learnings: [
-      
-    ],
     feedback: true,
     screenshots: [
       {
@@ -343,14 +279,6 @@ export const projects: Project[] = [
       "Power Fx"
       
     ],
-    challenges: [
-      "Strong coupling with Power Automate Flows.",
-      "State management across multiple screens and components in Power Apps.",
-   
-    ],
-    learnings: [
-      
-    ],
     feedback: true,
     screenshots: [
       {
@@ -383,18 +311,6 @@ export const projects: Project[] = [
       "Sharepoint",
       
     ],
-    challenges: [
-      "Implementing scalable state management with Power Automate.",
-      "Ensuring responsive and consistent UI across devices.",
-      "Optimizing performance and build speed using Power Automate.",
-      "Designing a smooth and intuitive navigation flow.",
-    ],
-    learnings: [
-      "Enhanced understanding of Power Automate for managing global state efficiently.",
-      "Improved skills in responsive UI design using Power Automate.",
-      "Learned performance tuning techniques with Power Automate.",
-      "Gained experience in creating scalable and maintainable frontend structures.",
-    ],
     feedback: true,
     screenshots: [
       {
@@ -406,3 +322,4 @@ export const projects: Project[] = [
     ],
   }
 ];
+

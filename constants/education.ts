@@ -3,7 +3,7 @@ import { TimelineViewerData } from '@/types/TimelineViewer.types';
 export const education: TimelineViewerData[] = [
   {
     title:
-      'Master of Computer Science · Birla Global University',
+      "Master of Computer Science · Bishop's  University · Quebec, Canada",
     date: 'Sept 2019 – Feb 2021',
     description:
       'Achieved the highest grade in the Game Design course, where I developed an isometric-view game using Unity and C#.',
