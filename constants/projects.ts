@@ -40,7 +40,7 @@ export const projects: Project[] = [
     tagline:
       "A comprehensive Azure DevOps setup for CI/CD, including pipelines, repositories, and artifact management.",
     overview:
-      "Built on Branch and Release workflows by Microsoft, it contains reusable Yaml pipelies, safety checks for automated build and release processes.",
+      "Built on Branch and Release workflows by Microsoft, it contains reusable YAML pipelines, safety checks for automated build and release processes.",
     features: [
       "Continuous Integration - Build validation on every PR to ensure code quality and catch issues early.",
       "Continuous Deployment - Automated Deployment of source code and environment setup on completion of a PR.",
@@ -73,11 +73,11 @@ export const projects: Project[] = [
     overview:
       "Built on Robert Cecil Martin's Clean Architecture principles, this project features a layered architecture with clear separation of concerns. With Each of the layers as a seperate project in the solution, it ensures massive scalability and maintainability.",
     features: [
-      "CORE - The parent c# library holding multiple db contexts and respecticve models",
-      "API - The controller web API prpject. Leverarting the CORE library, it exposes RESTful endpoints for managing DER data.",
-      "Repostotyr- The data access layer, implementing the repository pattern to abstract database interactions and ensure a clean separation of concerns.",
-      "Application Logic - Untie Business logic the UI Layer, ensuring a clean and maintainable Business Logic",
-      "WebApp - A Blazor server built using Premium Telerik UI components, providing a rich and interactive user interface for managing DER data and visualizing insights.",
+      "CORE - The parent C# library holding multiple database contexts and respective models.",
+      "API - The controller Web API project. Leveraging the CORE library, it exposes RESTful endpoints for managing DER data.",
+      "Repository - The data access layer, implementing the repository pattern to abstract database interactions and ensure clean separation of concerns.",
+      "Application Logic - Decoupled business logic from the UI layer, ensuring maintainability and testability.",
+      "WebApp - A Blazor server application built using premium Telerik UI components, providing a rich and interactive user interface for managing DER data and visualizing insights.",
     ],
     techStack: [
       "@Blazor",
@@ -103,19 +103,19 @@ export const projects: Project[] = [
   },
 
   {
-    title: "Performance Management Application | Human Resouces",
+    title: "Performance Management Application | Human Resources",
     slug: "performance-management",
     category: "full-stack-devops",
     tagline:
       "A performance management application for human resources, designed to streamline employee evaluations and feedback processes.",
     overview:
-      "The Performance Management Application is a comprehensive tool for human resources departments to manage employee performance evaluations, track progress, and provide feedback. Built with React and TypeScript, the platform ensures a seamless user experience and efficient performance management workflows.",
+      "The Performance Management Application is a comprehensive tool for HR departments to manage employee performance evaluations, track progress, and provide constructive feedback. Built with .NET Core and Entity Framework, the platform ensures a seamless user experience and efficient performance management workflows.",
     features: [
-      "Real-time performance tracking and evaluation.",
-      "Categorized performance metrics for better insights.",
-      "Automated feedback collection and reporting.",
-      "Integration with existing HR systems for data synchronization.",
-      "Customizable evaluation templates and workflows.",
+      "Real-time performance tracking and evaluation across departments.",
+      "Categorized performance metrics with actionable insights.",
+      "Automated feedback collection and comprehensive reporting.",
+      "Seamless integration with existing HR systems for data synchronization.",
+      "Customizable evaluation templates and configurable workflows.",
     ],
     techStack: [
       "C#",
@@ -146,17 +146,16 @@ export const projects: Project[] = [
     tagline:
       "The Center of Excellence (CoE) Starter Kit for Power Platform Governance.",
     overview:
-      "The Center of Excellence (CoE) Starter Kit for Power Platform Governance is a comprehensive solution designed to help organizations establish and maintain governance practices for their Power Platform environments. Built on the Microsoft Power Platform, it ensures best practices are followed and operational risks are minimized.",
+      "The Center of Excellence (CoE) Starter Kit provides a comprehensive framework for establishing and maintaining governance practices across Power Platform environments. It ensures organizational compliance with best practices and minimizes operational and security risks.",
     features: [
-      "Admin View to manage governance settings and monitor compliance.",
-      "ALM Accelerator: Facilitates application lifecycle management for Power Platform solutions using Azure Devops CI/CD.",
+      "Admin dashboard for managing governance settings and monitoring compliance across environments.",
+      "ALM Accelerator integration with Azure DevOps for streamlined application lifecycle management and CI/CD automation.",
     ],
     techStack: [
-      "Power Automate",
-      "Power Apps",
+  
+   "ALM",
       "Dataverse",
-      "SharePoint",
-      "Power Fx"
+      "Azure DevOps"
       
     ],
     feedback: true,
@@ -182,15 +181,14 @@ export const projects: Project[] = [
     tagline:
       "An enterprise risk management application built using Microsoft Power Platform, designed to help organizations identify, assess, and mitigate risks effectively.",
     overview:
-      "Risk Register is a comprehensive enterprise risk management application that helps organizations identify, assess, and mitigate risks. Built on the Microsoft Power Platform, it leverages Power Apps, Power Automate, and Power BI to provide a seamless and integrated solution for managing enterprise risks.",
+      "Risk Register is a comprehensive enterprise risk management solution that helps organizations identify, assess, and mitigate risks effectively. Leveraging the Microsoft Power Platform ecosystem, it provides integrated risk tracking, visualization, and automated workflows for seamless risk management.",
     features: [
-      "Risk Identification and Assessment: Allows users to identify and assess risks across various departments and projects.",
-      "Risk Mitigation Planning: Provides tools to develop and implement risk mitigation strategies.",
-      "Real-time Risk Monitoring: Enables continuous monitoring of risk factors and their impact on the organization.",
-      "Integration with Microsoft Power Platform: Leverages Power Apps, Power Automate, and Power BI for a comprehensive risk management solution.",
-      "Customizable Dashboards: Offers interactive dashboards for visualizing risk data and insights.",
-      "Automated Reporting: Generates automated reports for stakeholders and management.",
-
+      "Risk Identification and Assessment - Systematically identify and assess risks across departments and projects.",
+      "Risk Mitigation Planning - Develop and implement targeted risk mitigation strategies with clear ownership.",
+      "Real-time Risk Monitoring - Continuously track risk factors and visualize organizational impact.",
+      "Power Platform Integration - Leverage Power Apps, Power Automate, and Power BI for seamless workflows.",
+      "Customizable Dashboards - Interactive, role-based dashboards for visualizing risk data and KPIs.",
+      "Automated Reporting - Generate stakeholder reports with actionable insights and compliance tracking.",
     ],
     techStack: [
       "Power Automates",
@@ -225,12 +223,11 @@ export const projects: Project[] = [
     tagline:
       "Digitized improvement suggestions, streamlined workflows, fostering collaboration and accelerating organizational innovation.",
     overview:
-      "The Opportunity Hub PowerApp is a comprehensive solution designed to digitize improvement suggestions and streamline workflows for the Business Innovation Team. Built on the Microsoft Power Platform, it fosters collaboration and accelerates organizational innovation by providing a centralized platform for idea submission, evaluation, and implementation.",
+      "Opportunity Hub is a comprehensive innovation management solution that digitizes improvement suggestions and streamlines workflows. Built on the Microsoft Power Platform, it fosters cross-team collaboration and accelerates organizational innovation through centralized idea submission, evaluation, and implementation tracking.",
     features: [
-      "Centralized Idea Submission: Provides a user-friendly interface for employees to submit improvement suggestions and ideas.",
-      "Streamlined Workflow Management: Automates the routing and approval of ideas to ensure timely evaluation and implementation. ",
-      "Collaboration and Feedback: Enables team members to collaborate on ideas, provide feedback, and track the progress of suggestions.",
-
+      "Centralized Idea Submission - User-friendly interface for employees to submit and categorize improvement suggestions.",
+      "Streamlined Workflow Management - Automated routing and approval workflows for timely evaluation and implementation.",
+      "Collaboration and Feedback - Real-time collaboration tools for team feedback and progress tracking throughout the innovation lifecycle.",
     ],
     techStack: [
       "Power Automate",
@@ -263,11 +260,11 @@ export const projects: Project[] = [
     tagline:
       "Automates reminders and compliance tracking for shared devices, reducing operational risk and ensuring hygiene standards.",
     overview:
-      "The Hygiene Initiative Tracker PowerApp is a comprehensive solution designed to automate reminders and track compliance for shared devices within the IT Security Team. Built on the Microsoft Power Platform, it ensures hygiene standards are maintained and operational risks are minimized.",
+      "Hygiene Initiative Tracker automates reminders and compliance tracking for shared IT devices. Built on the Microsoft Power Platform, it ensures organizational hygiene standards are consistently maintained while reducing operational risk and security incidents.",
     features: [
-      "Automated Reminders: Sends timely reminders to ensure compliance with hygiene standards.",
-      "Compliance Tracking: Monitors and records the hygiene status of shared devices.",
-      "Centralized Dashboard: Provides a comprehensive view of compliance metrics and trends.",
+      "Automated Reminders - Intelligent scheduling sends timely hygiene compliance notifications to device users.",
+      "Compliance Tracking - Comprehensive monitoring and recording of device hygiene status across the organization.",
+      "Centralized Dashboard - Real-time visibility into compliance metrics, trends, and device health status.",
     ],
     techStack: [
       "Power Automate",
@@ -295,13 +292,13 @@ export const projects: Project[] = [
     tagline:
       "A comprehensive power automate solution for managing BDD approval flows within the Enterprise Architecture team, designed to streamline and automate the approval process for architectural decisions.",
     overview:
-      "The EA BDD Approval Flows project is a robust solution built to manage and automate the approval processes within the Enterprise Architecture team. Leveraging Power Automate, it ensures efficient handling of BDD approvals, reducing manual effort and improving workflow consistency.",
+      "EA BDD Approval Flows is a robust Power Automate solution that manages and automates approval processes for the Enterprise Architecture team. It streamlines BDD approvals, eliminates manual bottlenecks, and ensures consistent workflow execution across the organization.",
     features: [
-      "Automated BDD approval workflows for the Enterprise Architecture team.",
-      "Real-time notifications and updates on approval status.",
-      "Integration with existing enterprise systems for seamless data flow.",
-      "Customizable approval templates and rules to fit organizational needs.",
-      "Clean design and user-friendly layout for better usability.",
+      "Automated BDD approval workflows tailored for Enterprise Architecture requirements.",
+      "Real-time notifications with approval status tracking and escalation management.",
+      "Seamless integration with enterprise systems for automated data flow and synchronization.",
+      "Customizable approval templates and business rules aligned with organizational policies.",
+      "Intuitive interface design for improved usability and stakeholder adoption.",
     ],
     techStack: [
       "Power Automate",
