@@ -7,7 +7,7 @@ import {
 import { Badge } from '@/components/ui/badge';
 
 import { siteConfig } from '@/config/site';
-import { ArrowLeftIcon, ExternalLinkIcon } from 'lucide-react';
+import { ArrowLeftIcon } from 'lucide-react';
 import Link from 'next/link';
 import { ProjectScreenshotsSlider } from '@/components/project-screenshots-slider';
 
@@ -135,32 +135,6 @@ const ProjectDetails = async ({
                 </span>
               </Link>
             </p>
-          </div>
-        )}
-
-        {project.links && (
-          <div id="links" className="my-4">
-            <h2 className="text-lg font-semibold">
-              {project.links.live && project.links.github ? 'Links' : 'Link'}
-            </h2>
-
-            <div className="flex flex-wrap items-center gap-2">
-              {project.links.live && (
-                <Link href={project.links.live} target="_blank">
-                  <Badge variant="default" className="px-4 text-base">
-                    Live <ExternalLinkIcon className="w-4 h-4 -mt-2" />
-                  </Badge>
-                </Link>
-              )}
-
-              {project.links.github && (
-                <Link href={project.links.github} target="_blank">
-                  <Badge variant="outline" className="px-4 text-base">
-                    Github <ExternalLinkIcon className="w-4 h-4 -mt-2" />
-                  </Badge>
-                </Link>
-              )}
-            </div>
           </div>
         )}
       </div>

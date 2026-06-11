@@ -15,10 +15,6 @@ type Project = {
   challenges: string[];
   learnings: string[];
   feedback: boolean;
-  links: {
-    live?: string;
-    github?: string;
-  };
   screenshots?: ProjectScreenshot[];
 };
 
@@ -39,6 +35,51 @@ export const projectZones = [
 
 export const projects: Project[] = [
   // full-stack-devops
+  {
+    title: "Azure DevOps Setup - CI/CD with Pipelines, Repos, and Artifacts",
+    slug: "azure-devops-setup",
+    category: "full-stack-devops",
+    tagline:
+      "A comprehensive Azure DevOps setup for CI/CD, including pipelines, repositories, and artifact management.",
+    overview:
+      "Built on Branch and Release workflows by Microsoft, it contains Yaml pipelies for automated build and release processes.",
+    features: [
+      "Continoious INtegraton - Build validation on every PR to ensure code quality and catch issues early.",
+      "Contimnious Deployment - Automated Deployment of source code and evnrionemtn setup on completion of a PR.",
+      "Repostotyr- The data access layer, implementing the repository pattern to abstract database interactions and ensure a clean separation of concerns.",
+      "Application Logic - Untie Business logic the UI Layer, ensuring a clean and maintainable Business Logic",
+      "WebApp - A Blazor server built using Premium Telerik UI components, providing a rich and interactive user interface for managing DER data and visualizing insights.",
+    ],
+    techStack: [
+      "@Blazor",
+      "@Telerik UI",
+      ".NET Core",
+      "C#",
+      "Entity Framework Core",
+      "Clean Architecture",
+    ],
+    challenges: [
+      "Maintaining brand consistency while reimagining Nike’s design language.",
+      "Achieving smooth animations without affecting performance.",
+      "Ensuring pixel-perfect responsiveness across devices.",
+      "Optimizing load times for a better user experience.",
+    ],
+    learnings: [
+      "Mastered efficient UI composition with React and Tailwind CSS.",
+      "Improved understanding of animation principles using Framer Motion.",
+      "Enhanced deployment workflow using Vercel and Vite integration.",
+      "Developed better practices for responsive and scalable frontend design.",
+    ],
+    feedback: false,
+    screenshots: [
+      {
+        src: "/projects/azure_Devops_1_blur.png",
+        alt: "Azure DevOps screenshot 1",
+        caption: "Azure DevOps 1",
+      },
+
+    ],
+  },
   {
     title: "DER Registry | .NET CORE Web API and Blazor WebApp",
     slug: "distributed-energy-resource-registry",
@@ -75,18 +116,14 @@ export const projects: Project[] = [
       "Developed better practices for responsive and scalable frontend design.",
     ],
     feedback: false,
-    links: {
-      live: "https://nike-reimagined-mu.vercel.app/",
-      github: "https://github.com/Pavan19971/nike-reimagined",
-    },
     screenshots: [
       {
-        src: "/projects/der_registry_1.png",
+        src: "/projects/der_registry_1_blur.png",
         alt: "DER Registry screenshot 1",
         caption: "DER Registry 1",
       },
       {
-        src: "/projects/der_registry_2.png",
+        src: "/projects/der_registry_2_blur.png",
         alt: "DER Registry screenshot 2",
         caption: "DER Registry 2",
       },
@@ -127,16 +164,16 @@ export const projects: Project[] = [
       "Developed better state management practices for dynamic data handling.",
     ],
     feedback: true,
-    links: {
-      live: "https://news-hub-seven-chi.vercel.app/",
-      github: "https://github.com/Pavan19971/news-hub",
-    },
     screenshots: [
       {
-        src: "/projects/project-screenshot-placeholder.svg",
-        alt: "Performance Management application screenshot",
-        caption:
-          "Replace this placeholder with your Performance Management screenshot.",
+        src: "/projects/performance_management_1_blur.png",
+        alt: "Performance Management application screenshot 1",
+        caption: "Performance Management 1",
+      },
+      {
+        src: "/projects/performance_management_2_blur.png",
+        alt: "Performance Management application screenshot 2",
+        caption: "Performance Management 2",
       },
     ],
   },
@@ -171,19 +208,15 @@ export const projects: Project[] = [
       
     ],
     feedback: true,
-    links: {
-      live: "https://freshmart-store.vercel.app",
-      github: "https://github.com/Pavan19971/freshmart-store",
-    },
     screenshots: [
       {
-        src: "/projects/coe_alm_1.png",
+        src: "/projects/coe_alm_1_blur.png",
         alt: "coe_alm_1",
         caption:
           "Replace this placeholder with your CoE Starter Kit screenshot.",
       },
         {
-        src: "/projects/coe_alm_2.png",
+        src: "/projects/coe_alm_2_blur.png",
         alt: "coe_alm_2",
         caption:
           "Replace this placeholder with your CoE Starter Kit screenshot.",
@@ -225,23 +258,19 @@ export const projects: Project[] = [
 
     ],
     feedback: true,
-    links: {
-      live: "https://portfolio-v3-idf9.onrender.com",
-      github: "https://topmate.io/pavan_sista/1773422",
-    },
     screenshots: [
       {
-        src: "/projects/risk_register_screenshot_1.png",
+        src: "/projects/risk_register_1_blur.png",
         alt: "Risk Register screenshot 1",
         caption: "Risk Register 1",
       },
       {
-        src: "/projects/risk_register_screenshot_2.png",
+        src: "/projects/risk_register_2_blur.png",
         alt: "Risk Register screenshot 2",
         caption: "Risk Register 2",
       },
       {
-        src: "/projects/risk_register_screenshot_3.png",
+        src: "/projects/risk_register_3_blur.png",
         alt: "Risk Register screenshot 3",
         caption: "Risk Register 3",
       },
@@ -278,19 +307,15 @@ export const projects: Project[] = [
       
     ],
     feedback: true,
-    links: {
-      live: "https://freshmart-store.vercel.app",
-      github: "https://github.com/Pavan19971/freshmart-store",
-    },
     screenshots: [
       {
-        src: "/projects/opp_hub_1.png",
+        src: "/projects/opp_hub_1_blur.png",
         alt: "Opportunity Hub 1",
         caption:
           "Replace this placeholder with your Opportunity Hub screenshot.",
       },
        {
-        src: "/projects/opp_hub_2.png",
+        src: "/projects/opp_hub_2_blur.png",
         alt: "Opportunity Hub 2 ",
         caption:
           "Replace this placeholder with your Opportunity Hub screenshot.",
@@ -327,13 +352,9 @@ export const projects: Project[] = [
       
     ],
     feedback: true,
-    links: {
-      live: "https://freshmart-store.vercel.app",
-      github: "https://github.com/Pavan19971/freshmart-store",
-    },
     screenshots: [
       {
-        src: "/projects/hyg_init_1.png",
+        src: "/projects/hyg_init_1_blur.png",
         alt: "Hygiene Initiative Tracker 1",
         caption:
           "Replace this placeholder with your Hygiene Initiative Tracker screenshot.",
@@ -375,10 +396,6 @@ export const projects: Project[] = [
       "Gained experience in creating scalable and maintainable frontend structures.",
     ],
     feedback: true,
-    links: {
-      live: "https://freshmart-store.vercel.app",
-      github: "https://github.com/Pavan19971/freshmart-store",
-    },
     screenshots: [
       {
         src: "/projects/project-screenshot-placeholder.svg",
