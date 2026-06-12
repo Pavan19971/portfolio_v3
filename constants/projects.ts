@@ -40,7 +40,7 @@ export const projects: Project[] = [
     tagline:
       "A comprehensive Azure DevOps setup for CI/CD, including pipelines, repositories, and artifact management.",
     overview:
-      "Built on Branch and Release workflows by Microsoft, it contains reusable YAML pipelines, safety checks for automated build and release processes.",
+      "Built on Release branch workflow, it contains reusable YAML pipelines, safety checks for automated build and release processes.",
     features: [
       "Continuous Integration - Build validation on every PR to ensure code quality and catch issues early.",
       "Continuous Deployment - Automated Deployment of source code and environment setup on completion of a PR.",
