@@ -61,6 +61,11 @@ export const projects: Project[] = [
         alt: "Azure DevOps screenshot 1",
         caption: "Azure DevOps 1",
       },
+       {
+        src: "/projects/azure_Devops_2.png",
+        alt: "Azure DevOps screenshot 2",
+        caption: "Azure DevOps 2",
+      }
 
     ],
   },
