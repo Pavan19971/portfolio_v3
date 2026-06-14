@@ -40,7 +40,7 @@ export const projects: Project[] = [
     tagline:
       "A comprehensive Azure DevOps setup for CI/CD, including pipelines, repositories, and artifact management.",
     overview:
-      "Built on Release branch workflow, it contains reusable YAML pipelines, safety checks for automated build and release processes.",
+      "Built on Release branching workflow with feature branches, bugs, and hotfixes, it contains reusable YAML pipelines, safety checks for automated build and release processes.",
     features: [
       "Continuous Integration - Build validation on every PR to ensure code quality and catch issues early.",
       "Continuous Deployment - Automated Deployment of source code and environment setup on completion of a PR.",
@@ -59,12 +59,12 @@ export const projects: Project[] = [
       {
         src: "/projects/azure_Devops_1_blur.png",
         alt: "Azure DevOps screenshot 1",
-        caption: "Azure DevOps 1",
+        caption: "Visual representation of YAML",
       },
        {
         src: "/projects/azure_Devops_2.png",
         alt: "Azure DevOps screenshot 2",
-        caption: "Azure DevOps 2",
+        caption: "Techincal Designed I've documented",
       }
 
     ],
@@ -97,12 +97,12 @@ export const projects: Project[] = [
       {
         src: "/projects/der_registry_1_blur.png",
         alt: "DER Registry screenshot 1",
-        caption: "DER Registry 1",
+        caption: "Grid using DTO to process 2000+ records in less than 2 seconds",
       },
       {
         src: "/projects/der_registry_2_blur.png",
         alt: "DER Registry screenshot 2",
-        caption: "DER Registry 2",
+        caption: "Componenet based, highly scalable design",
       },
     ],
   },
@@ -133,12 +133,12 @@ export const projects: Project[] = [
       {
         src: "/projects/performance_management_1_blur.png",
         alt: "Performance Management application screenshot 1",
-        caption: "Performance Management 1",
+        caption: "Feedback Form",
       },
       {
         src: "/projects/performance_management_2_blur.png",
         alt: "Performance Management application screenshot 2",
-        caption: "Performance Management 2",
+        caption: "Manager View",
       },
     ],
   },
@@ -169,13 +169,13 @@ export const projects: Project[] = [
         src: "/projects/coe_alm_1_blur.png",
         alt: "coe_alm_1",
         caption:
-          "Replace this placeholder with your CoE Starter Kit screenshot.",
+          "ALM Accelerator",
       },
         {
         src: "/projects/coe_alm_2_blur.png",
         alt: "coe_alm_2",
         caption:
-          "Replace this placeholder with your CoE Starter Kit screenshot.",
+          "Admin Dashboard",
       },
     ],
   },
@@ -207,17 +207,17 @@ export const projects: Project[] = [
       {
         src: "/projects/risk_register_1_blur.png",
         alt: "Risk Register screenshot 1",
-        caption: "Risk Register 1",
+        caption: "A form with data validation.",
       },
       {
         src: "/projects/risk_register_2_blur.png",
         alt: "Risk Register screenshot 2",
-        caption: "Risk Register 2",
+        caption: "Datacards with intricate design and conditional formatting.",
       },
       {
         src: "/projects/risk_register_3_blur.png",
         alt: "Risk Register screenshot 3",
-        caption: "Risk Register 3",
+        caption: "A Risk Dashboard with key metrics and visualizations.",
       },
     ],
   },
@@ -248,13 +248,13 @@ export const projects: Project[] = [
         src: "/projects/opp_hub_1_blur.png",
         alt: "Opportunity Hub 1",
         caption:
-          "Replace this placeholder with your Opportunity Hub screenshot.",
+          "Centralized idea submission interface.",
       },
        {
         src: "/projects/opp_hub_2_blur.png",
         alt: "Opportunity Hub 2 ",
         caption:
-          "Replace this placeholder with your Opportunity Hub screenshot.",
+          "Streamlined workflow management dashboard.",
       }
     ],
   },
@@ -285,7 +285,7 @@ export const projects: Project[] = [
         src: "/projects/hyg_init_1_blur.png",
         alt: "Hygiene Initiative Tracker 1",
         caption:
-          "Replace this placeholder with your Hygiene Initiative Tracker screenshot.",
+          "Automated reminders and compliance tracking interface.",
       }
     ],
   },
@@ -317,7 +317,7 @@ export const projects: Project[] = [
         src: "/projects/project-screenshot-placeholder.svg",
         alt: "EA BDD Approval Flows screenshot",
         caption:
-          "Replace this placeholder with your EA BDD Approval Flows screenshot.",
+          "Automated BDD approval workflows interface.",
       },
     ],
   }
