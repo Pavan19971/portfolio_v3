@@ -69,13 +69,15 @@ export function ProjectScreenshotsSlider({
             key={`${projectSlug}-${screenshot.src}`}
             className="flex-none w-[92%] md:w-[60%] lg:w-[48%] snap-start overflow-hidden border rounded-lg border-border bg-muted/20"
           >
-            <Image
-              src={screenshot.src}
-              alt={screenshot.alt}
-              width={1600}
-              height={900}
-              className="object-cover w-full h-auto"
-            />
+            <div className="relative w-full aspect-[16/9]">
+              <Image
+                src={screenshot.src}
+                alt={screenshot.alt}
+                fill
+                sizes="(max-width: 768px) 92vw, (max-width: 1024px) 60vw, 48vw"
+                className="object-cover"
+              />
+            </div>
             {screenshot.caption && (
               <figcaption className="p-3 text-sm text-muted-foreground">
                 {screenshot.caption}
