@@ -26,9 +26,7 @@ const MicrosoftPowerPlatformProjectsPage = () => {
 
       <PageHeader className="mb-10">
         <PageHeaderHeading>Microsoft Power Platform</PageHeaderHeading>
-        <PageHeaderHeading className="mt-2 text-muted-foreground">
-          Power Platform specific projects.
-        </PageHeaderHeading>
+
       </PageHeader>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 card-container">
