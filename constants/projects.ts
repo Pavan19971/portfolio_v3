@@ -104,6 +104,10 @@ export const projects: Project[] = [
         alt: "DER Registry screenshot 2",
         caption: "Componenet based, highly scalable design",
       },
+      {
+        src: "/projects/der_registry_3.jpg",
+        alt: "DER Registry screenshot 3",
+      },
     ],
   },
 
